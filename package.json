@@ -1,0 +1,35 @@
+{
+  "name": "centre-of-excellence",
+  "version": "1.0.0",
+  "description": "An app for Centre of Excellence in the Home Office",
+  "main": "app.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development npm-run-all --parallel watch:app watch:scss",
+    "watch:app": "nodemon .",
+    "watch:scss": "nodemon -e scss -x 'npm run sass'",
+    "setup": "mkdir ./public; mkdir ./public/css",
+    "sass": "node-sass -o ./public/css/ ./app/assets/sass/main.scss --include-path ./node_modules",
+    "clean": "rm -rf ./public",
+    "postinstall": "npm-run-all clean setup sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@gitlab.digital.homeoffice.gov.uk:2222/sahmed/centre-of-excellence.git"
+  },
+  "author": "Sulthan Ahmed",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "4.14.0",
+    "express-partial-templates": "^0.2.0",
+    "hof-frontend-toolkit": "^1.0.0",
+    "hof-govuk-template": "^1.0.0",
+    "hogan-express-strict": "^0.5.4",
+    "node-sass": "4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^1.7.0"
+  }
+}
