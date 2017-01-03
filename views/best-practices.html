@@ -1,5 +1,5 @@
 {{<partials-layout}}
-  {{$content}}
+  {{$menu}}
     <main id="content" class="main" role="main">
       <ul class="nav-menu">
         <li><a href="/">What we do</a></li>
@@ -11,5 +11,7 @@
         <li><a href="/resources">Resources</a></li>
       </ul>
     </main>
+  {{/menu}}
+  {{$content}}
   {{/content}}
 {{/partials-layout}}

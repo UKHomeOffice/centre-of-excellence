@@ -1,15 +1,17 @@
 {{<partials-layout}}
+  {{$menu}}
+    <main id="content" class="main" role="main">
+      <ul class="nav-menu">
+        <li>What we do</li>
+        <li><a href="/hosting-platform">Hosting Platform</a></li>
+        <li><a href="/teams">Teams</a></li>
+        <li><a href="/engagement">Engagement</a></li>
+        <li><a href="/best-practices">Best practices</a></li>
+        <li><a href="/roadmap">Road map</a></li>
+        <li><a href="/resources">Resources</a></li>
+      </ul>
+    </main>
+  {{/menu}}
   {{$content}}
-  <main id="content" class="main" role="main">
-    <ul class="nav-menu">
-      <li>What we do</li>
-      <li><a href="/hosting-platform">Hosting Platform</a></li>
-      <li><a href="/teams">Teams</a></li>
-      <li><a href="/engagement">Engagement</a></li>
-      <li><a href="/best-practices">Best practices</a></li>
-      <li><a href="/roadmap">Road map</a></li>
-      <li><a href="/resources">Resources</a></li>
-    </ul>
-  </main>
   {{/content}}
 {{/partials-layout}}
