@@ -10,6 +10,12 @@
   }
 }
 
+// Fixing a bug in gov.uk not having the blue border
+#footer {
+  position: relative;
+  border-top: 1rem solid #005ea5;
+}
+
 //TODO: Fix this, it's not great
 .header-proposition {
   position: relative;
