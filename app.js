@@ -41,6 +41,36 @@ app.get('/', function(req, res){
   }));
 });
 
+app.get('/hosting-platform', function(req, res){
+  res.render('hosting-platform', Object.assign({}, res.locals, {
+  }));
+});
+
+app.get('/teams', function(req, res){
+  res.render('teams', Object.assign({}, res.locals, {
+  }));
+});
+
+app.get('/engagement', function(req, res){
+  res.render('engagement', Object.assign({}, res.locals, {
+  }));
+});
+
+app.get('/best-practices', function(req, res){
+  res.render('best-practices', Object.assign({}, res.locals, {
+  }));
+});
+
+app.get('/roadmap', function(req, res){
+  res.render('roadmap', Object.assign({}, res.locals, {
+  }));
+});
+
+app.get('/resources', function(req, res){
+  res.render('resources', Object.assign({}, res.locals, {
+  }));
+});
+
 // example of passing in an object as middleware just for a particular page
 app.get('/template', function(req, res){
   res.render('template', Object.assign({}, res.locals, {
@@ -48,9 +78,6 @@ app.get('/template', function(req, res){
   }));
 });
 
-app.get('/test', function(req, res){
-  res.render('template');
-});
 
 // Set server port
 app.listen(4000, function() {
