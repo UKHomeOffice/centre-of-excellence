@@ -10,7 +10,7 @@
     "watch:app": "nodemon .",
     "watch:scss": "nodemon -e scss -x 'npm run sass'",
     "setup": "mkdir ./public; mkdir ./public/css",
-    "sass": "node-sass -o ./public/css/ ./app/assets/sass/main.scss --include-path ./node_modules",
+    "sass": "node-sass -o ./public/css/ ./app/assets/sass/app.scss --include-path ./node_modules",
     "clean": "rm -rf ./public",
     "postinstall": "npm-run-all clean setup sass"
   },
