@@ -1,0 +1,11 @@
+@import "../../../node_modules/hof-frontend-toolkit/assets/stylesheets/app.scss";
+
+.nav-menu {
+  list-style-type: none;
+  padding-top: 0.5em;
+  padding-left: 1em;
+  li {
+    display: inline;
+    margin-right: 0.938em;
+  }
+}

@@ -34,10 +34,15 @@ app.use(function(req, res, next) {
     hello: 'Hi this is a page'
   });
   next();
-})
+});
+
+app.get('/', function(req, res){
+  res.render('home', Object.assign({}, res.locals, {
+  }));
+});
 
 // example of passing in an object as middleware just for a particular page
-app.get('/', function(req, res){
+app.get('/template', function(req, res){
   res.render('template', Object.assign({}, res.locals, {
     hello: 'SOMETHING ELSE'
   }));
