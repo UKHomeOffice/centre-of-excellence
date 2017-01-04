@@ -19,7 +19,6 @@
     "url": "ssh://git@gitlab.digital.homeoffice.gov.uk:2222/sahmed/centre-of-excellence.git"
   },
   "author": "Sulthan Ahmed",
-  "license": "UNLICENSED",
   "dependencies": {
     "express": "4.14.0",
     "express-partial-templates": "^0.2.0",
