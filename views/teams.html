@@ -1,19 +1,19 @@
 {{<partials-layout}}
-  {{$menu}}
-  <main id="content" class="main" role="main">
-    <div class="navbar">
-      <ul class="navbar__list-items">
-        <li><a href="/">What we do</a></li>
-        <li><a href="/hosting-platform">Hosting Platform</a></li>
-        <li class="active"><a href="#">Teams</a></li>
-        <li><a href="/engagement">Engagement</a></li>
-        <li><a href="/best-practices">Best practices</a></li>
-        <li><a href="/roadmap">Road map</a></li>
-        <li><a href="/resources">Resources</a></li>
-      </ul>
-    </div>
-  {{/menu}}
-  {{$content}}
+{{$menu}}
+  <div class="navbar">
+    <ul class="navbar__list-items">
+      <li><a href="/">What we do</a></li>
+      <li><a href="/hosting-platform">Hosting Platform</a></li>
+      <li class="active"><a href="#">Teams</a></li>
+      <li><a href="/engagement">Engagement</a></li>
+      <li><a href="/best-practices">Best practices</a></li>
+      <li><a href="/roadmap">Road map</a></li>
+      <li><a href="/resources">Resources</a></li>
+    </ul>
+  </div>
+{{/menu}}
+{{$content}}
+<main id="content" class="main" role="main">
   <div class="grid-row">
     <div class="column-two-thirds">
       <section class="intro">
@@ -28,6 +28,6 @@
       </section>
     </div>
   </div>
-  </main>
-  {{/content}}
+</main>
+{{/content}}
 {{/partials-layout}}

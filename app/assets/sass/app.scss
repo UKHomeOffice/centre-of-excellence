@@ -1,5 +1,18 @@
 @import "hof-frontend-toolkit/assets/stylesheets/app.scss";
 
+// This is so that the navigation is displaying properly
+// I could not find an appropriate GDS styleguide
+// GDS styleguide seems to use #content for padding which can't be reused
+.navbar {
+max-width: 960px;
+margin: 0 15px; }
+@media (min-width: 641px) {
+  .navbar {
+    margin: 0 30px; } }
+@media (min-width: 1020px) {
+  .navbar {
+    margin: 0 auto; } }
+
 // Fixing a bug in gov.uk not having the blue border
 #footer {
   position: relative;
