@@ -1,14 +1,17 @@
 {{<partials-layout}}
   {{$menu}}
     <main id="content" class="main" role="main">
-      <ul class="nav-menu">
-        <li><a href="/">What we do</a></li>
-        <li><a href="/hosting-platform">Hosting Platform</a></li>
-        <li><a href="/teams">Teams</a></li>
-        <li><a href="/engagement">Engagement</a></li>
-        <li><a href="/best-practices">Best practices</a></li>
-        <li><a href="/roadmap">Road map</a></li>
-        <li>Resources</li>
+        <div class="navbar">
+          <ul class="navbar__list-items">
+            <li><a href="/">What we do</a></li>
+            <li><a href="/hosting-platform">Hosting Platform</a></li>
+            <li><a href="/teams">Teams</a></li>
+            <li><a href="/engagement">Engagement</a></li>
+            <li><a href="/best-practices">Best practices</a></li>
+            <li><a href="/roadmap">Road map</a></li>
+            <li class="active"><a href="#">Resources</a></li>
+          </ul>
+        </div>
       </ul>
   {{/menu}}
   {{$content}}
