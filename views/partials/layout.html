@@ -23,6 +23,12 @@
   {{/menu}}
   {{$main}}
       {{$menu}}{{/menu}}
-      {{$content}}{{/content}}
+  <main id="content" class="main" role="main">
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        {{$content}}{{/content}}
+      </div>
+    </div>
+  </main>
   {{/main}}
 {{/govuk-template}}
