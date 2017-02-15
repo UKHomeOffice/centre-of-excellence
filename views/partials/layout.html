@@ -3,13 +3,33 @@
     {{>partials-head}}
   {{/head}}
 
-  {{$journeyHeader}}Centre of Excellence{{/journeyHeader}}
+  {{$journeyHeader}}Home Office: Centre of Excellence{{/journeyHeader}}
 
   {{$propositionHeader}}
   {{> partials-navigation}}
   {{/propositionHeader}}
+  {{$menu}}
+    <nav class="navbar">
+      <ul class="navbar__list-items">
+        <li class="{{$home-active}}{{/home-active}}"><a href="/">What we do</a></li>
+        <li class="{{$host-active}}{{/host-active}}"><a href="/hosting-platform">Hosting Platform</a></li>
+        <li class="{{$teams-active}}{{/teams-active}}"><a href="/teams">Teams</a></li>
+        <li class="{{$engage-active}}{{/engage-active}}"><a href="/engagement">Engagement</a></li>
+        <li class="{{$practice-active}}{{/practice-active}}"><a href="/best-practices">Best practices</a></li>
+        <li class="{{$road-active}}{{/road-active}}"><a href="/roadmap">Road map</a></li>
+        <li class="{{$resources-active}}{{/resources-active}}"><a href="/resources">Resources</a></li>
+      </ul>
+    </nav>
+  {{/menu}}
   {{$main}}
       {{$menu}}{{/menu}}
-      {{$content}}{{/content}}
+  <main id="content" class="main" role="main">
+    <div class="grid-row">
+      <div class="column-two-thirds">
+      <h1>{{$pageTitle}}{{/pageTitle}}</h1>
+        {{$content}}{{/content}}
+      </div>
+    </div>
+  </main>
   {{/main}}
 {{/govuk-template}}
